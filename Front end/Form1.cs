@@ -19,6 +19,12 @@ namespace Front_end
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Student studentForm = new Student();
+
+            // Show the Student form
+            studentForm.Show();
+
+            this.Hide();
 
         }
     }

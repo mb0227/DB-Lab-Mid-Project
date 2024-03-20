@@ -26,3 +26,19 @@ A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Projec
 A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front end.dll
 A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\refint\Front end.dll
 A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front end.pdb
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front end.sourcelink.json
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\Front end.exe
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\Front end.deps.json
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\Front end.runtimeconfig.json
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\Front end.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\Front end.pdb
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front end.csproj.AssemblyReference.cache
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front end.csproj.Up2Date
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front end.genruntimeconfig.cache
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\ref\Front end.dll
