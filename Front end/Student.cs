@@ -225,7 +225,7 @@ namespace Front_end
             if (!Regex.IsMatch(contact, contactPattern))
             {
                 e.Cancel = true;
-                errorProvider5.SetError(textBox, "Please enter a valid contact number starting with '3'.");
+                errorProvider5.SetError(textBox, "Please enter a valid contact number.");
             }
             else
             {
@@ -233,5 +233,18 @@ namespace Front_end
             }
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Attendance attendance = new Attendance();
+            attendance.Show();
+            this.Hide();
+        }
     }
 }

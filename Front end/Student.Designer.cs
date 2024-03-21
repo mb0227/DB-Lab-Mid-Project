@@ -51,6 +51,8 @@
             errorProvider4 = new ErrorProvider(components);
             errorProvider5 = new ErrorProvider(components);
             comboBox1 = new ComboBox();
+            button4 = new Button();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider2).BeginInit();
@@ -226,12 +228,34 @@
             comboBox1.Size = new Size(211, 35);
             comboBox1.TabIndex = 28;
             // 
+            // button4
+            // 
+            button4.Location = new Point(72, 446);
+            button4.Name = "button4";
+            button4.Size = new Size(112, 34);
+            button4.TabIndex = 29;
+            button4.Text = "Go Back";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(906, 446);
+            button5.Name = "button5";
+            button5.Size = new Size(216, 34);
+            button5.TabIndex = 30;
+            button5.Text = "Mark Attendance";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // Student
             // 
             AutoScaleDimensions = new SizeF(13F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightBlue;
             ClientSize = new Size(1146, 642);
+            Controls.Add(button5);
+            Controls.Add(button4);
             Controls.Add(comboBox1);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -285,5 +309,7 @@
         private ErrorProvider errorProvider4;
         private ErrorProvider errorProvider5;
         private ComboBox comboBox1;
+        private Button button5;
+        private Button button4;
     }
 }

@@ -110,6 +110,7 @@
             button2.TabIndex = 5;
             button2.Text = "Manage CLO";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -127,6 +128,7 @@
             button3.TabIndex = 6;
             button3.Text = "Manage Rubric";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -144,6 +146,7 @@
             button4.TabIndex = 7;
             button4.Text = "Manage Assesment";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
