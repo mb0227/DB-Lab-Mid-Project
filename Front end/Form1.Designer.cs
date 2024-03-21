@@ -164,6 +164,7 @@
             button5.TabIndex = 8;
             button5.Text = "Manage Rubric Level\r\n";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // Form1
             // 

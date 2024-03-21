@@ -46,7 +46,6 @@ namespace Front_end
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e) //Insert
@@ -244,6 +243,13 @@ namespace Front_end
         {
             Attendance attendance = new Attendance();
             attendance.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            StudentResult s = new StudentResult();
+            s.Show();
             this.Hide();
         }
     }

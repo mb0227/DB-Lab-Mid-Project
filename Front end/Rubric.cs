@@ -19,7 +19,6 @@ namespace Front_end
             LoadData();
             fillcombobox();
         }
-
         private void Rubric_Load(object sender, EventArgs e)
         {
 
@@ -130,7 +129,7 @@ namespace Front_end
                 con.Close();
                 return id;
             }
-            return id;//student doesnt exist
+            return id;
         }
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
@@ -153,6 +152,11 @@ namespace Front_end
             Form1 f = new Form1();
             f.Show();
             this.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -46,3 +46,6 @@ A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Projec
 A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front_end.Assesment.resources
 A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front_end.CLO.resources
 A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front_end.Rubric.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front_end.AssesmentComponent.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front_end.RubricLevel.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front_end.StudentResult.resources

@@ -53,6 +53,7 @@
             comboBox1 = new ComboBox();
             button4 = new Button();
             button5 = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider2).BeginInit();
@@ -248,12 +249,23 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
+            // button6
+            // 
+            button6.Location = new Point(465, 492);
+            button6.Name = "button6";
+            button6.Size = new Size(216, 34);
+            button6.TabIndex = 31;
+            button6.Text = "Student Results";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // Student
             // 
             AutoScaleDimensions = new SizeF(13F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightBlue;
             ClientSize = new Size(1146, 642);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(comboBox1);
@@ -311,5 +323,6 @@
         private ComboBox comboBox1;
         private Button button5;
         private Button button4;
+        private Button button6;
     }
 }

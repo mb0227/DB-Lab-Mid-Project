@@ -41,6 +41,7 @@
             errorProvider1 = new ErrorProvider(components);
             errorProvider2 = new ErrorProvider(components);
             errorProvider3 = new ErrorProvider(components);
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider2).BeginInit();
@@ -140,11 +141,22 @@
             // 
             errorProvider3.ContainerControl = this;
             // 
+            // button3
+            // 
+            button3.Location = new Point(182, 294);
+            button3.Name = "button3";
+            button3.Size = new Size(197, 34);
+            button3.TabIndex = 9;
+            button3.Text = "Add Component";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Assesment
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
             Controls.Add(dataGridView1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -179,5 +191,6 @@
         private ErrorProvider errorProvider1;
         private ErrorProvider errorProvider2;
         private ErrorProvider errorProvider3;
+        private Button button3;
     }
 }

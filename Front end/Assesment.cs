@@ -125,9 +125,15 @@ namespace Front_end
             }
             else
             {
-                errorProvider3.SetError(textBox, ""); 
+                errorProvider3.SetError(textBox, "");
             }
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AssesmentComponent a = new AssesmentComponent();
+            a.Show();
+            this.Hide();
+        }
     }
 }
