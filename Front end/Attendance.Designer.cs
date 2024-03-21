@@ -98,7 +98,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Present", "Absent" });
+            comboBox2.Items.AddRange(new object[] { "Present", "Absent", "Leave", "Late" });
             comboBox2.Location = new Point(377, 180);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(143, 33);

@@ -53,14 +53,18 @@ namespace Front_end
             string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
 
             string cmd = "INSERT INTO STUDENT (FirstName, LastName, Contact, Email, RegistrationNumber, Status) VALUES (@FirstName, @LastName, @Contact, @Email, @RegistrationNumber, @Status)";
+            string cmd2 = "INSERT INTO LOOKUP(Name,Category) VALUES (@Name,@Category)";
 
             SqlConnection con = new SqlConnection(conURL);
 
             con.Open();
 
             SqlCommand command = new SqlCommand(cmd, con);
+            SqlCommand command2 = new SqlCommand(cmd2, con);
 
-            int valueToInsert = comboBox1.SelectedItem.ToString() == "Active" ? 5 : 0;
+            int valueToInsert = comboBox1.SelectedItem.ToString() == "Active" ? 5 : 6;
+
+            //command2.Parameters.Add("@Category", "")
 
             command.Parameters.AddWithValue("@FirstName", textBox7.Text);
             command.Parameters.AddWithValue("@LastName", textBox3.Text);
@@ -68,6 +72,7 @@ namespace Front_end
             command.Parameters.AddWithValue("@Email", textBox4.Text);
             command.Parameters.AddWithValue("@RegistrationNumber", textBox6.Text);
             command.Parameters.AddWithValue("@Status", valueToInsert);
+
             command.ExecuteNonQuery();
             con.Close();
 

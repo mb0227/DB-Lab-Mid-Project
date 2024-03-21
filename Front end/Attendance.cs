@@ -23,7 +23,6 @@ namespace Front_end
 
         private void Attendance_Load(object sender, EventArgs e)
         {
-
         }
 
         private void fillcombobox()
@@ -67,7 +66,6 @@ namespace Front_end
         private void button2_Click(object sender, EventArgs e) // Mark Attendance
         {
             string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
-
             string cmd2 = "INSERT INTO ClassAttendance (AttendanceDate) VALUES (@AttendanceDate)";
 
             string cmd = "INSERT INTO StudentAttendance (StudentID, AttendanceStatus) VALUES (@StudentID, @AttendanceStatus)";
@@ -79,7 +77,23 @@ namespace Front_end
             SqlCommand command2 = new SqlCommand(cmd2, con);
             SqlCommand command = new SqlCommand(cmd, con);
 
-            int valueToInsert = comboBox2.SelectedItem.ToString() == "Present" ? 5 : 10;
+            int valueToInsert = 0;
+            if(comboBox2.SelectedItem.ToString()=="Present")
+            {
+                valueToInsert = 1;
+            }
+            else if(comboBox2.SelectedItem.ToString() == "Absent")
+            {
+                valueToInsert = 2;
+            }
+            else if (comboBox2.SelectedItem.ToString() == "Leave")
+            {
+                valueToInsert = 3;
+            }
+            else if (comboBox2.SelectedItem.ToString() == "Late")
+            {
+                valueToInsert = 4;
+            }
             DateTime selectedDate = dateTimePicker1.Value;
 
             try

@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\assesmentcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\assesmentcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\assesmentcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\assesmentcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\rubriclevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\rubriclevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\front end\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\front end\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\front end\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|a:\\university related\\uet lahore\\2nd semester\\database systems\\db lab mid project\\front end\\front end\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\front end\\rubriclevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\rubriclevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\front end\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{266D989A-8634-4972-AEC6-ADE5E9A93E6B}|Front end\\Front end.csproj|solutionrelative:front end\\studentresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,49 +46,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AssesmentComponent.cs",
-              "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\AssesmentComponent.cs",
-              "RelativeDocumentMoniker": "Front end\\AssesmentComponent.cs",
-              "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\AssesmentComponent.cs",
-              "RelativeToolTip": "Front end\\AssesmentComponent.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAIwIYAAAAIAAAA",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Form1.cs",
+              "RelativeDocumentMoniker": "Front end\\Form1.cs",
+              "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Form1.cs",
+              "RelativeToolTip": "Front end\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAhwBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T08:01:47.471Z",
+              "WhenOpened": "2024-03-21T14:10:35.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AssesmentComponent.cs [Design]",
-              "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\AssesmentComponent.cs",
-              "RelativeDocumentMoniker": "Front end\\AssesmentComponent.cs",
-              "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\AssesmentComponent.cs [Design]",
-              "RelativeToolTip": "Front end\\AssesmentComponent.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "Attendance.cs [Design]",
+              "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Attendance.cs",
+              "RelativeDocumentMoniker": "Front end\\Attendance.cs",
+              "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Attendance.cs [Design]",
+              "RelativeToolTip": "Front end\\Attendance.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T08:00:25.035Z",
+              "WhenOpened": "2024-03-21T14:05:24.23Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Student.cs",
-              "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Student.cs",
-              "RelativeDocumentMoniker": "Front end\\Student.cs",
-              "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Student.cs",
-              "RelativeToolTip": "Front end\\Student.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAPwAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T07:49:26.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Student.cs [Design]",
               "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Student.cs",
               "RelativeDocumentMoniker": "Front end\\Student.cs",
@@ -96,44 +87,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "StudentResult.cs",
               "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\StudentResult.cs",
               "RelativeDocumentMoniker": "Front end\\StudentResult.cs",
               "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\StudentResult.cs",
               "RelativeToolTip": "Front end\\StudentResult.cs",
-              "ViewState": "AQIAALEAAAAAAAAAAAAgwLsAAAAJAAAA",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAwwKUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T07:13:48.053Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "StudentResult.cs [Design]",
               "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\StudentResult.cs",
               "RelativeDocumentMoniker": "Front end\\StudentResult.cs",
               "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\StudentResult.cs [Design]",
               "RelativeToolTip": "Front end\\StudentResult.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T07:10:31.881Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-21T07:10:31.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RubricLevel.cs [Design]",
-              "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\RubricLevel.cs",
-              "RelativeDocumentMoniker": "Front end\\RubricLevel.cs",
-              "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\RubricLevel.cs [Design]",
-              "RelativeToolTip": "Front end\\RubricLevel.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T06:19:25.923Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Form1.cs",
               "RelativeDocumentMoniker": "Front end\\Form1.cs",
@@ -142,6 +120,43 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T05:31:17.245Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Student.cs",
+              "RelativeDocumentMoniker": "Front end\\Student.cs",
+              "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Student.cs",
+              "RelativeToolTip": "Front end\\Student.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAowEYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T07:49:26.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Attendance.cs",
+              "RelativeDocumentMoniker": "Front end\\Attendance.cs",
+              "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Attendance.cs",
+              "RelativeToolTip": "Front end\\Attendance.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAnwG4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T14:05:29.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RubricLevel.cs [Design]",
+              "DocumentMoniker": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\RubricLevel.cs",
+              "RelativeDocumentMoniker": "Front end\\RubricLevel.cs",
+              "ToolTip": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\RubricLevel.cs [Design]",
+              "RelativeToolTip": "Front end\\RubricLevel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T06:19:25.923Z"
             }
           ]
         }
