@@ -19,6 +19,9 @@ namespace Front_end
             fillComboBox1Data();
             fillComboBox2Data();
             fillComboBox3Data();
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
+            comboBox3.SelectedIndex = 0;
             LoadData();
         }
 
@@ -143,27 +146,42 @@ namespace Front_end
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("HERE: ");
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
             return marks;
         }
 
-        private void textBox1_Validating(object sender, CancelEventArgs e)
+        private bool checkValidation()
         {
-            TextBox textBox = (TextBox)sender;
             int value;
 
             if (!int.TryParse(textBox1.Text, out value) || value <= 0 || value >= GetMaxMarks())
             {
-                errorProvider1.SetError(textBox, "Please enter a positive integer greater than 0 and less than ." + GetMaxMarks());
-                e.Cancel = true;
+                errorProvider1.SetError(textBox1, "Please enter a positive integer greater than 0 and less than ." + GetMaxMarks());
+                return false;
             }
             else
             {
-                errorProvider1.SetError(textBox, "");
+                errorProvider1.SetError(textBox1, "");
             }
+            return true;
+        }
+
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {
+            //TextBox textBox = (TextBox)sender;
+            //int value;
+
+            //if (!int.TryParse(textBox1.Text, out value) || value <= 0 || value >= GetMaxMarks())
+            //{
+            //    errorProvider1.SetError(textBox, "Please enter a positive integer greater than 0 and less than ." + GetMaxMarks());
+            //    e.Cancel = true;
+            //}
+            //else
+            //{
+            //    errorProvider1.SetError(textBox, "");
+            //}
         }
 
         private void LoadData()
@@ -257,37 +275,40 @@ namespace Front_end
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            if (checkValidation())
             {
-                string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
-                string cmd = "INSERT INTO StudentResult (StudentID, AssessmentComponentId, RubricMeasurementId,EvaluationDate,ObtainedMarks) VALUES (@StudentID, @AssessmentComponentId, @RubricMeasurementId,@EvaluationDate,@ObtainedMarks)";
+                try
+                {
+                    string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
+                    string cmd = "INSERT INTO StudentResult (StudentID, AssessmentComponentId, RubricMeasurementId,EvaluationDate,ObtainedMarks) VALUES (@StudentID, @AssessmentComponentId, @RubricMeasurementId,@EvaluationDate,@ObtainedMarks)";
 
-                SqlConnection con = new SqlConnection(conURL);
-                con.Open();
+                    SqlConnection con = new SqlConnection(conURL);
+                    con.Open();
 
-                SqlCommand command = new SqlCommand(cmd, con);
+                    SqlCommand command = new SqlCommand(cmd, con);
 
-                DateTime selectedDate = dateTimePicker1.Value.Date;
+                    DateTime selectedDate = dateTimePicker1.Value.Date;
 
-                int id1 = GetStudentID();
-                int id2 = GetRubricID();
-                int id3 = GetAssessmentID();
+                    int id1 = GetStudentID();
+                    int id2 = GetRubricID();
+                    int id3 = GetAssessmentID();
 
-                command.Parameters.AddWithValue("@StudentID", id1);
-                command.Parameters.AddWithValue("@RubricMeasurementId", id2);
-                command.Parameters.AddWithValue("@AssessmentComponentId", id3);
-                command.Parameters.AddWithValue("@EvaluationDate", selectedDate);
-                command.Parameters.AddWithValue("@ObtainedMarks", textBox1.Text);
-                command.ExecuteNonQuery();
-                ClearText();
-                MessageBox.Show("Data Inserted Successfully!");
-                LoadData();
+                    command.Parameters.AddWithValue("@StudentID", id1);
+                    command.Parameters.AddWithValue("@RubricMeasurementId", id2);
+                    command.Parameters.AddWithValue("@AssessmentComponentId", id3);
+                    command.Parameters.AddWithValue("@EvaluationDate", selectedDate);
+                    command.Parameters.AddWithValue("@ObtainedMarks", textBox1.Text);
+                    command.ExecuteNonQuery();
+                    ClearText();
+                    MessageBox.Show("Data Inserted Successfully!");
+                    LoadData();
 
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error inserting data: " + ex.Message);
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error inserting data: " + ex.Message);
+                }
             }
         }
 
@@ -296,6 +317,11 @@ namespace Front_end
             Form1 f = new Form1();
             f.Show();
             this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

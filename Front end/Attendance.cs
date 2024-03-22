@@ -19,6 +19,8 @@ namespace Front_end
         {
             InitializeComponent();
             fillcombobox();
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
         }
 
         private void Attendance_Load(object sender, EventArgs e)

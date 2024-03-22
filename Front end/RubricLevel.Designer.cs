@@ -170,6 +170,7 @@
             Controls.Add(label1);
             Name = "RubricLevel";
             Text = "RubricLevel";
+            Load += RubricLevel_Load;
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

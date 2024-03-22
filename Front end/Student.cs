@@ -9,12 +9,12 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Front_end
 {
     public partial class Student : Form
     {
-
         public Student()
         {
             InitializeComponent();
@@ -28,6 +28,7 @@ namespace Front_end
         private void Student_Load(object sender, EventArgs e)
         {
             LoadData();
+            comboBox1.SelectedIndex = 0; 
         }
 
 
@@ -50,69 +51,75 @@ namespace Front_end
 
         private void button1_Click(object sender, EventArgs e) //Insert
         {
-            string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
+            if (checkValidation())
+            {
+                string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
 
-            string cmd = "INSERT INTO STUDENT (FirstName, LastName, Contact, Email, RegistrationNumber, Status) VALUES (@FirstName, @LastName, @Contact, @Email, @RegistrationNumber, @Status)";
-            string cmd2 = "INSERT INTO LOOKUP(Name,Category) VALUES (@Name,@Category)";
+                string cmd = "INSERT INTO STUDENT (FirstName, LastName, Contact, Email, RegistrationNumber, Status) VALUES (@FirstName, @LastName, @Contact, @Email, @RegistrationNumber, @Status)";
+                string cmd2 = "INSERT INTO LOOKUP(Name,Category) VALUES (@Name,@Category)";
 
-            SqlConnection con = new SqlConnection(conURL);
+                SqlConnection con = new SqlConnection(conURL);
 
-            con.Open();
+                con.Open();
 
-            SqlCommand command = new SqlCommand(cmd, con);
-            SqlCommand command2 = new SqlCommand(cmd2, con);
+                SqlCommand command = new SqlCommand(cmd, con);
+                SqlCommand command2 = new SqlCommand(cmd2, con);
 
-            int valueToInsert = comboBox1.SelectedItem.ToString() == "Active" ? 5 : 6;
+                int valueToInsert = comboBox1.SelectedItem.ToString() == "Active" ? 5 : 6;
 
-            //command2.Parameters.Add("@Category", "")
+                //command2.Parameters.Add("@Category", "")
 
-            command.Parameters.AddWithValue("@FirstName", textBox7.Text);
-            command.Parameters.AddWithValue("@LastName", textBox3.Text);
-            command.Parameters.AddWithValue("@Contact", textBox2.Text);
-            command.Parameters.AddWithValue("@Email", textBox4.Text);
-            command.Parameters.AddWithValue("@RegistrationNumber", textBox6.Text);
-            command.Parameters.AddWithValue("@Status", valueToInsert);
+                command.Parameters.AddWithValue("@FirstName", textBox7.Text);
+                command.Parameters.AddWithValue("@LastName", textBox3.Text);
+                command.Parameters.AddWithValue("@Contact", textBox2.Text);
+                command.Parameters.AddWithValue("@Email", textBox4.Text);
+                command.Parameters.AddWithValue("@RegistrationNumber", textBox6.Text);
+                command.Parameters.AddWithValue("@Status", valueToInsert);
 
-            command.ExecuteNonQuery();
-            con.Close();
+                command.ExecuteNonQuery();
+                con.Close();
 
-            ClearText();
-            MessageBox.Show("Data Inserted Successfully!");
-            LoadData();
+                ClearText();
+                MessageBox.Show("Data Inserted Successfully!");
+                LoadData();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e) //Update
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (checkValidation())
             {
-                int studentID = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
-
-                string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
-                string cmd = "UPDATE STUDENT SET FirstName = @FirstName, LastName = @LastName, Contact = @Contact, Email = @Email, RegistrationNumber = @RegistrationNumber, Status = @Status WHERE Id = @Id";
-
-                using (SqlConnection con = new SqlConnection(conURL))
+                if (dataGridView1.SelectedRows.Count > 0)
                 {
-                    con.Open();
+                    int studentID = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
 
-                    int valueToInsert = comboBox1.SelectedItem.ToString() == "Active" ? 5 : 0;
+                    string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
+                    string cmd = "UPDATE STUDENT SET FirstName = @FirstName, LastName = @LastName, Contact = @Contact, Email = @Email, RegistrationNumber = @RegistrationNumber, Status = @Status WHERE Id = @Id";
 
-                    SqlCommand command = new SqlCommand(cmd, con);
-                    command.Parameters.AddWithValue("@Id", studentID);
-                    command.Parameters.AddWithValue("@FirstName", textBox7.Text);
-                    command.Parameters.AddWithValue("@LastName", textBox3.Text);
-                    command.Parameters.AddWithValue("@Contact", textBox2.Text);
-                    command.Parameters.AddWithValue("@Email", textBox4.Text);
-                    command.Parameters.AddWithValue("@RegistrationNumber", textBox6.Text);
-                    command.Parameters.AddWithValue("@Status", valueToInsert);
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Data Updated Successfully!");
+                    using (SqlConnection con = new SqlConnection(conURL))
+                    {
+                        con.Open();
+
+                        int valueToInsert = comboBox1.SelectedItem.ToString() == "Active" ? 5 : 0;
+
+                        SqlCommand command = new SqlCommand(cmd, con);
+                        command.Parameters.AddWithValue("@Id", studentID);
+                        command.Parameters.AddWithValue("@FirstName", textBox7.Text);
+                        command.Parameters.AddWithValue("@LastName", textBox3.Text);
+                        command.Parameters.AddWithValue("@Contact", textBox2.Text);
+                        command.Parameters.AddWithValue("@Email", textBox4.Text);
+                        command.Parameters.AddWithValue("@RegistrationNumber", textBox6.Text);
+                        command.Parameters.AddWithValue("@Status", valueToInsert);
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Data Updated Successfully!");
+                    }
+                    ClearText();
+                    LoadData();
                 }
-                ClearText();
-                LoadData();
-            }
-            else
-            {
-                MessageBox.Show("Please select a row to update.");
+                else
+                {
+                    MessageBox.Show("Please select a row to update.");
+                }
             }
         }
 
@@ -153,88 +160,156 @@ namespace Front_end
             textBox7.Text = "";
         }
 
-        private void textBox7_Validating_1(object sender, CancelEventArgs e)
+        private bool checkValidation()
         {
-            TextBox textBox = (TextBox)sender;
-
-            if (string.IsNullOrWhiteSpace(textBox.Text))
+            if (string.IsNullOrWhiteSpace(textBox7.Text.Trim()))
             {
-                e.Cancel = true;
-                errorProvider1.SetError(textBox, "First name cannot be empty.");
+                errorProvider1.SetError(textBox7, "First name cannot be empty.");
+                return false;
             }
             else
             {
-                errorProvider1.SetError(textBox, "");
+                errorProvider1.SetError(textBox7, "");
             }
-        }
 
-        private void textBox6_Validating(object sender, CancelEventArgs e)
-        {
-            TextBox textBox = (TextBox)sender;
             string pattern = @"^(201[3-9]|202[0-3])-(CS|CE|PET|ME|EE|AE|CH)-([1-9][0-9]?[0-9]?|600)$";
 
-            if (!Regex.IsMatch(textBox.Text, pattern))
+            if (!Regex.IsMatch(textBox6.Text, pattern))
             {
-                e.Cancel = true;
-                errorProvider2.SetError(textBox, "Please enter a valid registration number in the form 2023-CS-111.");
+                errorProvider2.SetError(textBox6, "Please enter a valid registration number in the form 2023-CS-111.");
+                return false;
             }
             else
             {
-                errorProvider2.SetError(textBox, "");
+                errorProvider2.SetError(textBox6, "");
             }
-        }
 
-        private void textBox3_Validating(object sender, CancelEventArgs e)
-        {
-            TextBox textBox = (TextBox)sender;
-
-            if (string.IsNullOrWhiteSpace(textBox.Text))
+            if (string.IsNullOrWhiteSpace(textBox3.Text))
             {
-                e.Cancel = true;
-                errorProvider3.SetError(textBox, "Last name cannot be empty.");
+                errorProvider3.SetError(textBox3, "Last name cannot be empty.");
+                return false;
             }
             else
             {
-                errorProvider3.SetError(textBox, "");
+                errorProvider3.SetError(textBox3, "");
             }
-        }
 
-        private void textBox4_Validating(object sender, CancelEventArgs e)
-        {
-            TextBox textBox = (TextBox)sender;
-            string email = textBox.Text;
+            string email = textBox4.Text;
 
-            // Construct the pattern string for email validation
             string emailPattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
 
             if (!Regex.IsMatch(email, emailPattern))
             {
-                e.Cancel = true;
-                errorProvider4.SetError(textBox, "Please enter a valid email address.");
+                errorProvider4.SetError(textBox4, "Please enter a valid email address.");
+                return false;
             }
             else
             {
-                errorProvider4.SetError(textBox, "");
+                errorProvider4.SetError(textBox4, "");
             }
-        }
 
-        private void textBox2_Validating(object sender, CancelEventArgs e)
-        {
-            TextBox textBox = (TextBox)sender;
-            string contact = textBox.Text;
-
-            // Construct the pattern string for contact validation
+            string contact = textBox2.Text;
             string contactPattern = @"^3\d{9}$";
 
             if (!Regex.IsMatch(contact, contactPattern))
             {
-                e.Cancel = true;
-                errorProvider5.SetError(textBox, "Please enter a valid contact number.");
+                errorProvider5.SetError(textBox2, "Please enter a valid contact number.");
+                return false;
             }
             else
             {
-                errorProvider5.SetError(textBox, "");
+                errorProvider5.SetError(textBox2, "");
             }
+
+            return true;
+        }
+
+        private void textBox7_Validating_1(object sender, CancelEventArgs e)
+        {
+            /*
+            TextBox textBox = (TextBox)sender;
+
+            // Check if the sender is a TextBox and not button 4 or 5
+            if (textBox != textBox7 && !textBox.Focused && !skipValidation)
+            {
+                if (string.IsNullOrWhiteSpace(textBox.Text))
+                {
+                    e.Cancel = true;
+                    errorProvider1.SetError(textBox, "First name cannot be empty.");
+                }
+                else
+                {
+                    errorProvider1.SetError(textBox, "");
+                }
+            }*/
+        }
+
+        private void textBox6_Validating(object sender, CancelEventArgs e)
+        {
+            //TextBox textBox = (TextBox)sender;
+            //string pattern = @"^(201[3-9]|202[0-3])-(CS|CE|PET|ME|EE|AE|CH)-([1-9][0-9]?[0-9]?|600)$";
+
+            //if (!Regex.IsMatch(textBox.Text, pattern))
+            //{
+            //    e.Cancel = true;
+            //    errorProvider2.SetError(textBox, "Please enter a valid registration number in the form 2023-CS-111.");
+            //}
+            //else
+            //{
+            //    errorProvider2.SetError(textBox, "");
+            //}
+        }
+
+        private void textBox3_Validating(object sender, CancelEventArgs e)
+        {
+            //TextBox textBox = (TextBox)sender;
+
+            //if (string.IsNullOrWhiteSpace(textBox.Text))
+            //{
+            //    e.Cancel = true;
+            //    errorProvider3.SetError(textBox, "Last name cannot be empty.");
+            //}
+            //else
+            //{
+            //    errorProvider3.SetError(textBox, "");
+            //}
+        }
+
+        private void textBox4_Validating(object sender, CancelEventArgs e)
+        {
+            //TextBox textBox = (TextBox)sender;
+            //string email = textBox.Text;
+
+            //// Construct the pattern string for email validation
+            //string emailPattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+
+            //if (!Regex.IsMatch(email, emailPattern))
+            //{
+            //    e.Cancel = true;
+            //    errorProvider4.SetError(textBox, "Please enter a valid email address.");
+            //}
+            //else
+            //{
+            //    errorProvider4.SetError(textBox, "");
+            //}
+        }
+
+        private void textBox2_Validating(object sender, CancelEventArgs e)
+        {
+            //string contact = textBox.Text;
+
+            //// Construct the pattern string for contact validation
+            //string contactPattern = @"^3\d{9}$";
+
+            //if (!Regex.IsMatch(contact, contactPattern))
+            //{
+            //    e.Cancel = true;
+            //    errorProvider5.SetError(textBox, "Please enter a valid contact number.");
+            //}
+            //else
+            //{
+            //    errorProvider5.SetError(textBox, "");
+            //}
         }
 
         private void button4_Click(object sender, EventArgs e)

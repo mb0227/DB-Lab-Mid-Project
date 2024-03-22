@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Reflection;
 
 namespace Front_end
 {
@@ -24,34 +26,67 @@ namespace Front_end
             LoadData();
         }
 
+        private bool checkValidation()
+        {
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                errorProvider1.SetError(textBox1, "Title cannot be empty.");
+                return false;
+            }
+            else
+            {
+                errorProvider1.SetError(textBox1, "");
+            }
+
+            int value;
+            if (!int.TryParse(textBox2.Text, out value) || value <= 0 || value >= 100)
+            {
+                errorProvider2.SetError(textBox2, "Please enter a positive integer greater than 0 and less than 100.");
+                textBox2.Focus();
+                return false;
+            }
+            if (!int.TryParse(textBox3.Text, out value) || value <= 0 || value >= 40)
+            {
+                errorProvider3.SetError(textBox3, "Please enter a positive integer greater than 0 and less than 40.");
+                return false;
+            }
+            else
+            {
+                errorProvider3.SetError(textBox3, "");
+            }
+            return true;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            if (checkValidation())
             {
-                string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
+                try
+                {
+                    string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
 
-                string cmd = "INSERT INTO Assessment (Title, DateCreated, TotalMarks, TotalWeightage) VALUES (@Title, @DateCreated, @TotalMarks, @TotalWeightage)";
+                    string cmd = "INSERT INTO Assessment (Title, DateCreated, TotalMarks, TotalWeightage) VALUES (@Title, @DateCreated, @TotalMarks, @TotalWeightage)";
 
-                SqlConnection con = new SqlConnection(conURL);
-                con.Open();
+                    SqlConnection con = new SqlConnection(conURL);
+                    con.Open();
 
-                SqlCommand command = new SqlCommand(cmd, con);
-                DateTime currentDateTime = DateTime.Now;
+                    SqlCommand command = new SqlCommand(cmd, con);
+                    DateTime currentDateTime = DateTime.Now;
 
-                command.Parameters.AddWithValue("@Title", textBox1.Text);
-                command.Parameters.AddWithValue("@DateCreated", currentDateTime);
-                command.Parameters.AddWithValue("@TotalMarks", textBox2.Text);
-                command.Parameters.AddWithValue("@TotalWeightage", textBox3.Text);
-                command.ExecuteNonQuery();
-                con.Close();
+                    command.Parameters.AddWithValue("@Title", textBox1.Text);
+                    command.Parameters.AddWithValue("@DateCreated", currentDateTime);
+                    command.Parameters.AddWithValue("@TotalMarks", textBox2.Text);
+                    command.Parameters.AddWithValue("@TotalWeightage", textBox3.Text);
+                    command.ExecuteNonQuery();
+                    con.Close();
 
-                ClearText();
-                MessageBox.Show("Data Inserted Successfully!");
-                LoadData();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error inserting data: " + ex.Message);
+                    ClearText();
+                    MessageBox.Show("Data Inserted Successfully!");
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error inserting data: " + ex.Message);
+                }
             }
         }
 
@@ -89,44 +124,44 @@ namespace Front_end
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
         {
-            TextBox textBox = (TextBox)sender;
+            //TextBox textBox = (TextBox)sender;
 
-            if (string.IsNullOrWhiteSpace(textBox.Text))
-            {
-                e.Cancel = true;
-                errorProvider1.SetError(textBox, "Title cannot be empty.");
-            }
-            else
-            {
-                errorProvider1.SetError(textBox, "");
-            }
+            //if (string.IsNullOrWhiteSpace(textBox.Text))
+            //{
+            //    e.Cancel = true;
+            //    errorProvider1.SetError(textBox, "Title cannot be empty.");
+            //}
+            //else
+            //{
+            //    errorProvider1.SetError(textBox, "");
+            //}
         }
 
         private void textBox2_Validating(object sender, CancelEventArgs e)
         {
-            TextBox textBox = (TextBox)sender;
-            int value;
-            if (!int.TryParse(textBox2.Text, out value) || value <= 0 || value >= 100)
-            {
-                errorProvider2.SetError(textBox, "Please enter a positive integer greater than 0 and less than 100.");
-                textBox2.Focus();
-                e.Cancel = true;
-            }
+            //TextBox textBox = (TextBox)sender;
+            //int value;
+            //if (!int.TryParse(textBox2.Text, out value) || value <= 0 || value >= 100)
+            //{
+            //    errorProvider2.SetError(textBox, "Please enter a positive integer greater than 0 and less than 100.");
+            //    textBox2.Focus();
+            //    e.Cancel = true;
+            //}
         }
 
         private void textBox3_Validating(object sender, CancelEventArgs e)
         {
-            TextBox textBox = (TextBox)sender;
-            int value;
-            if (!int.TryParse(textBox3.Text, out value) || value <= 0 || value >= 40)
-            {
-                errorProvider3.SetError(textBox, "Please enter a positive integer greater than 0 and less than 40.");
-                e.Cancel = true;
-            }
-            else
-            {
-                errorProvider3.SetError(textBox, "");
-            }
+            //TextBox textBox = (TextBox)sender;
+            //int value;
+            //if (!int.TryParse(textBox3.Text, out value) || value <= 0 || value >= 40)
+            //{
+            //    errorProvider3.SetError(textBox, "Please enter a positive integer greater than 0 and less than 40.");
+            //    e.Cancel = true;
+            //}
+            //else
+            //{
+            //    errorProvider3.SetError(textBox, "");
+            //}
         }
 
         private void button3_Click(object sender, EventArgs e)

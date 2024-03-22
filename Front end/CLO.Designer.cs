@@ -41,6 +41,7 @@
             dataGridView1 = new DataGridView();
             textBox1 = new TextBox();
             button3 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider3).BeginInit();
@@ -138,11 +139,21 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // button4
+            // 
+            button4.Location = new Point(209, 284);
+            button4.Name = "button4";
+            button4.Size = new Size(166, 34);
+            button4.TabIndex = 9;
+            button4.Text = "Generate Report";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // CLO
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(textBox1);
             Controls.Add(dataGridView1);
@@ -177,5 +188,6 @@
         private DataGridView dataGridView1;
         private TextBox textBox1;
         private Button button3;
+        private Button button4;
     }
 }

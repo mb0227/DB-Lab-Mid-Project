@@ -18,6 +18,7 @@ namespace Front_end
             InitializeComponent();
             LoadData();
             fillcombobox();
+            comboBox1.SelectedIndex = 0;
         }
         private void Rubric_Load(object sender, EventArgs e)
         {
@@ -61,33 +62,36 @@ namespace Front_end
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
-
-            string cmd = "INSERT INTO Rubric (Details, CloId) VALUES (@Details, @CloId)";
-
-            SqlConnection con = new SqlConnection(conURL);
-
-            con.Open();
-
-            SqlCommand command = new SqlCommand(cmd, con);
-
-            try
+            if (checkValidation())
             {
-                command.Parameters.AddWithValue("@Details", textBox1.Text);
-                command.Parameters.AddWithValue("@CloId", GetCloID());
-                command.ExecuteNonQuery();
+                string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
 
-                MessageBox.Show("Data Inserted Successfully!");
-                ClearText();
-                LoadData();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                con.Close();
+                string cmd = "INSERT INTO Rubric (Details, CloId) VALUES (@Details, @CloId)";
+
+                SqlConnection con = new SqlConnection(conURL);
+
+                con.Open();
+
+                SqlCommand command = new SqlCommand(cmd, con);
+
+                try
+                {
+                    command.Parameters.AddWithValue("@Details", textBox1.Text);
+                    command.Parameters.AddWithValue("@CloId", GetCloID());
+                    command.ExecuteNonQuery();
+
+                    MessageBox.Show("Data Inserted Successfully!");
+                    ClearText();
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    con.Close();
+                }
             }
         }
 
@@ -132,19 +136,33 @@ namespace Front_end
             return id;
         }
 
-        private void textBox1_Validating(object sender, CancelEventArgs e)
+        private bool checkValidation()
         {
-            TextBox textBox = (TextBox)sender;
 
-            if (string.IsNullOrWhiteSpace(textBox.Text))
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                e.Cancel = true;
-                errorProvider1.SetError(textBox, "Details cannot be empty.");
+                errorProvider1.SetError(textBox1, "Details cannot be empty.");
+                return false;
             }
             else
             {
-                errorProvider1.SetError(textBox, "");
+                errorProvider1.SetError(textBox1, "");
             }
+            return true;
+        }
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {
+            //TextBox textBox = (TextBox)sender;
+
+            //if (string.IsNullOrWhiteSpace(textBox.Text))
+            //{
+            //    e.Cancel = true;
+            //    errorProvider1.SetError(textBox, "Details cannot be empty.");
+            //}
+            //else
+            //{
+            //    errorProvider1.SetError(textBox, "");
+            //}
         }
 
         private void button2_Click(object sender, EventArgs e)

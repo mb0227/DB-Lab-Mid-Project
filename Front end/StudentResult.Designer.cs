@@ -43,6 +43,7 @@
             comboBox3 = new ComboBox();
             dataGridView1 = new DataGridView();
             button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -166,11 +167,22 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.Location = new Point(12, 284);
+            button3.Name = "button3";
+            button3.Size = new Size(151, 34);
+            button3.TabIndex = 13;
+            button3.Text = "Generate Report";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // StudentResult
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(dataGridView1);
             Controls.Add(comboBox3);
@@ -209,5 +221,6 @@
         private ComboBox comboBox2;
         private TextBox textBox1;
         private Button button2;
+        private Button button3;
     }
 }

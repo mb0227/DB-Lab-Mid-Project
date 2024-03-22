@@ -17,22 +17,37 @@ namespace Front_end
         {
             InitializeComponent();
             fillComboBoxData();
+            comboBox1.SelectedIndex = 0;
             LoadData();
         }
 
-        private void textBox1_Validating(object sender, CancelEventArgs e)
+        private bool checkValidation()
         {
-            TextBox textBox = (TextBox)sender;
 
-            if (string.IsNullOrWhiteSpace(textBox.Text))
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                e.Cancel = true;
-                errorProvider1.SetError(textBox, "Title cannot be empty.");
+                errorProvider1.SetError(textBox1, "Title cannot be empty.");
+                return false;
             }
             else
             {
-                errorProvider1.SetError(textBox, "");
+                errorProvider1.SetError(textBox1, "");
             }
+            return true;
+        }
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {
+            //TextBox textBox = (TextBox)sender;
+
+            //if (string.IsNullOrWhiteSpace(textBox.Text))
+            //{
+            //    e.Cancel = true;
+            //    errorProvider1.SetError(textBox, "Title cannot be empty.");
+            //}
+            //else
+            //{
+            //    errorProvider1.SetError(textBox, "");
+            //}
         }
 
         private void fillComboBoxData()
@@ -85,63 +100,69 @@ namespace Front_end
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            if (checkValidation())
             {
-                string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
-                string cmd = "INSERT INTO RubricLevel (RubricID, Details, MeasurementLevel) VALUES (@RubricID, @Details, @MeasurementLevel)";
+                try
+                {
+                    string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
+                    string cmd = "INSERT INTO RubricLevel (RubricID, Details, MeasurementLevel) VALUES (@RubricID, @Details, @MeasurementLevel)";
 
-                SqlConnection con = new SqlConnection(conURL);
-                con.Open();
+                    SqlConnection con = new SqlConnection(conURL);
+                    con.Open();
 
-                SqlCommand command = new SqlCommand(cmd, con);
-                DateTime currentDateTime = DateTime.Now;
+                    SqlCommand command = new SqlCommand(cmd, con);
+                    DateTime currentDateTime = DateTime.Now;
 
 
-                command.Parameters.AddWithValue("@RubricID", comboBox1.Text);
-                command.Parameters.AddWithValue("@Details", textBox1.Text);
-                command.Parameters.AddWithValue("@MeasurementLevel", comboBox2.Text);
-                command.ExecuteNonQuery();
-                ClearText();
-                MessageBox.Show("Data Inserted Successfully!");
-                LoadData();
+                    command.Parameters.AddWithValue("@RubricID", comboBox1.Text);
+                    command.Parameters.AddWithValue("@Details", textBox1.Text);
+                    command.Parameters.AddWithValue("@MeasurementLevel", comboBox2.Text);
+                    command.ExecuteNonQuery();
+                    ClearText();
+                    MessageBox.Show("Data Inserted Successfully!");
+                    LoadData();
 
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error inserting data: " + ex.Message);
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error inserting data: " + ex.Message);
+                }
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (checkValidation())
             {
-                string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
-
-                int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
-                DateTime currentDateTime = DateTime.Now;
-
-                string cmd = string.Format($"UPDATE RubricLevel SET RubricID=@RubricID, Details=@Details, MeasurementLevel=@MeasurementLevel WHERE Id = {id}");
-
-                using (SqlConnection con = new SqlConnection(conURL))
+                if (dataGridView1.SelectedRows.Count > 0)
                 {
-                    con.Open();
+                    string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
+
+                    int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
+                    DateTime currentDateTime = DateTime.Now;
+
+                    string cmd = string.Format($"UPDATE RubricLevel SET RubricID=@RubricID, Details=@Details, MeasurementLevel=@MeasurementLevel WHERE Id = {id}");
+
+                    using (SqlConnection con = new SqlConnection(conURL))
+                    {
+                        con.Open();
 
 
-                    SqlCommand command = new SqlCommand(cmd, con);
-                    command.Parameters.AddWithValue("@RubricID", comboBox1.Text);
-                    command.Parameters.AddWithValue("@Details", textBox1.Text);
-                    command.Parameters.AddWithValue("@MeasurementLevel", comboBox2.Text);
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Data Updated Successfully!");
+                        SqlCommand command = new SqlCommand(cmd, con);
+                        command.Parameters.AddWithValue("@RubricID", comboBox1.Text);
+                        command.Parameters.AddWithValue("@Details", textBox1.Text);
+                        command.Parameters.AddWithValue("@MeasurementLevel", comboBox2.Text);
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Data Updated Successfully!");
+                    }
+                    ClearText();
+                    LoadData();
                 }
-                ClearText();
-                LoadData();
-            }
-            else
-            {
-                MessageBox.Show("Please select a row to update.");
+                else
+                {
+                    MessageBox.Show("Please select a row to update.");
+                }
             }
         }
 
@@ -184,6 +205,11 @@ namespace Front_end
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RubricLevel_Load(object sender, EventArgs e)
         {
 
         }

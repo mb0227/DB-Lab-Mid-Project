@@ -38,6 +38,7 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -160,11 +161,28 @@
             button5.ForeColor = Color.White;
             button5.Location = new Point(419, 668);
             button5.Name = "button5";
-            button5.Size = new Size(322, 60);
+            button5.Size = new Size(322, 0);
             button5.TabIndex = 8;
             button5.Text = "Manage Rubric Level\r\n";
             button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button6.BackColor = Color.Teal;
+            button6.FlatAppearance.BorderColor = Color.Honeydew;
+            button6.FlatAppearance.BorderSize = 5;
+            button6.FlatAppearance.MouseDownBackColor = Color.White;
+            button6.FlatAppearance.MouseOverBackColor = Color.DarkSlateGray;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(420, 655);
+            button6.Name = "button6";
+            button6.Size = new Size(322, 63);
+            button6.TabIndex = 9;
+            button6.Text = "Manage Rubric Level";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // Form1
             // 
@@ -172,6 +190,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
             ClientSize = new Size(1116, 833);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -202,5 +221,6 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Button button6;
     }
 }

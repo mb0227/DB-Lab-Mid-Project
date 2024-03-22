@@ -46,9 +46,9 @@ namespace Front_end
             this.Hide();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            RubricLevel r =new RubricLevel();
+            RubricLevel r = new RubricLevel();
             r.Show();
             this.Hide();
         }
