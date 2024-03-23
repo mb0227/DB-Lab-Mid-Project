@@ -30,8 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             label1 = new Label();
-            contextMenuStrip1 = new ContextMenuStrip(components);
-            contextMenuStrip2 = new ContextMenuStrip(components);
             textBox1 = new TextBox();
             label2 = new Label();
             comboBox1 = new ComboBox();
@@ -39,6 +37,7 @@
             button2 = new Button();
             dataGridView1 = new DataGridView();
             errorProvider1 = new ErrorProvider(components);
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
@@ -46,77 +45,82 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(60, 66);
+            label1.Location = new Point(72, 145);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(65, 25);
+            label1.Size = new Size(78, 28);
             label1.TabIndex = 0;
             label1.Text = "Details";
             // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.ImageScalingSize = new Size(24, 24);
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
-            // 
-            // contextMenuStrip2
-            // 
-            contextMenuStrip2.ImageScalingSize = new Size(24, 24);
-            contextMenuStrip2.Name = "contextMenuStrip2";
-            contextMenuStrip2.Size = new Size(61, 4);
-            // 
             // textBox1
             // 
-            textBox1.Location = new Point(160, 63);
+            textBox1.Location = new Point(158, 142);
+            textBox1.Margin = new Padding(4, 3, 4, 3);
+            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(247, 31);
+            textBox1.Size = new Size(227, 112);
             textBox1.TabIndex = 3;
             textBox1.Validating += textBox1_Validating;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(476, 69);
+            label2.Location = new Point(72, 277);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(44, 25);
+            label2.Size = new Size(49, 28);
             label2.TabIndex = 4;
             label2.Text = "CLO";
+            label2.Click += label2_Click;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(546, 61);
+            comboBox1.Location = new Point(158, 274);
+            comboBox1.Margin = new Padding(4, 3, 4, 3);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 33);
+            comboBox1.Size = new Size(227, 36);
             comboBox1.TabIndex = 5;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // button1
             // 
-            button1.Location = new Point(385, 158);
+            button1.BackColor = Color.SpringGreen;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.ForeColor = Color.FromArgb(64, 0, 0);
+            button1.Location = new Point(207, 338);
+            button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(134, 50);
             button1.TabIndex = 6;
             button1.Text = "Add Rubric";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(647, 373);
+            button2.BackColor = Color.Cyan;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.ForeColor = Color.FromArgb(64, 0, 0);
+            button2.Location = new Point(72, 539);
+            button2.Margin = new Padding(4, 3, 4, 3);
             button2.Name = "button2";
-            button2.Size = new Size(112, 34);
+            button2.Size = new Size(134, 52);
             button2.TabIndex = 7;
             button2.Text = "HomePage";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = SystemColors.ControlLightLight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(244, 198);
+            dataGridView1.Location = new Point(492, 130);
+            dataGridView1.Margin = new Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(360, 225);
+            dataGridView1.Size = new Size(579, 411);
             dataGridView1.TabIndex = 8;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -124,11 +128,25 @@
             // 
             errorProvider1.ContainerControl = this;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ControlLightLight;
+            label3.Location = new Point(471, 41);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(129, 48);
+            label3.TabIndex = 9;
+            label3.Text = "Rubric";
+            // 
             // Rubric
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Teal;
+            ClientSize = new Size(1094, 777);
+            Controls.Add(label3);
             Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -136,7 +154,10 @@
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
+            Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Rubric";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Rubric";
             Load += Rubric_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -148,8 +169,6 @@
         #endregion
 
         private Label label1;
-        private ContextMenuStrip contextMenuStrip1;
-        private ContextMenuStrip contextMenuStrip2;
         private TextBox textBox1;
         private Label label2;
         private ComboBox comboBox1;
@@ -157,5 +176,6 @@
         private Button button2;
         private DataGridView dataGridView1;
         private ErrorProvider errorProvider1;
+        private Label label3;
     }
 }

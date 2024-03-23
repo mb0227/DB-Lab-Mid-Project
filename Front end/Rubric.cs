@@ -176,5 +176,10 @@ namespace Front_end
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,44 +43,51 @@
             comboBox3 = new ComboBox();
             dataGridView1 = new DataGridView();
             button2 = new Button();
-            button3 = new Button();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(161, 324);
+            button1.BackColor = Color.SpringGreen;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.ForeColor = Color.FromArgb(64, 0, 0);
+            button1.Location = new Point(413, 418);
+            button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(134, 50);
             button1.TabIndex = 0;
             button1.Text = "Add";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(67, 46);
+            label1.Location = new Point(80, 184);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(96, 25);
+            label1.Size = new Size(113, 28);
             label1.TabIndex = 1;
             label1.Text = "Student ID";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(293, 38);
+            comboBox1.Location = new Point(329, 174);
+            comboBox1.Margin = new Padding(4, 3, 4, 3);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 33);
+            comboBox1.Size = new Size(218, 36);
             comboBox1.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(67, 90);
+            label2.Location = new Point(79, 224);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(206, 25);
+            label2.Size = new Size(237, 28);
             label2.TabIndex = 3;
             label2.Text = "Assessment Component";
             label2.Click += label2_Click;
@@ -92,97 +99,116 @@
             // dateTimePicker1
             // 
             dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(293, 182);
+            dateTimePicker1.Location = new Point(329, 309);
+            dateTimePicker1.Margin = new Padding(4, 3, 4, 3);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(182, 31);
+            dateTimePicker1.Size = new Size(218, 34);
             dateTimePicker1.TabIndex = 4;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(67, 135);
+            label3.Location = new Point(79, 267);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(106, 25);
+            label3.Size = new Size(128, 28);
             label3.TabIndex = 5;
             label3.Text = "Rubric Level";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(67, 182);
+            label4.Location = new Point(79, 314);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(135, 25);
+            label4.Size = new Size(163, 28);
             label4.TabIndex = 6;
             label4.Text = "Evaluation Date";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(67, 237);
+            label5.Location = new Point(79, 362);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(139, 25);
+            label5.Size = new Size(163, 28);
             label5.TabIndex = 7;
             label5.Text = "Obtained Marks";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(293, 231);
+            textBox1.Location = new Point(329, 359);
+            textBox1.Margin = new Padding(4, 3, 4, 3);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(182, 31);
+            textBox1.Size = new Size(218, 34);
             textBox1.TabIndex = 8;
             textBox1.Validating += textBox1_Validating;
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(293, 127);
+            comboBox2.Location = new Point(329, 264);
+            comboBox2.Margin = new Padding(4, 3, 4, 3);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(182, 33);
+            comboBox2.Size = new Size(218, 36);
             comboBox2.TabIndex = 9;
             // 
             // comboBox3
             // 
             comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(293, 82);
+            comboBox3.Location = new Point(329, 219);
+            comboBox3.Margin = new Padding(4, 3, 4, 3);
             comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(182, 33);
+            comboBox3.Size = new Size(218, 36);
             comboBox3.TabIndex = 10;
+            comboBox3.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = SystemColors.ControlLightLight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(501, 46);
+            dataGridView1.GridColor = Color.WhiteSmoke;
+            dataGridView1.Location = new Point(594, 174);
+            dataGridView1.Margin = new Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(287, 333);
+            dataGridView1.Size = new Size(690, 400);
             dataGridView1.TabIndex = 11;
             // 
             // button2
             // 
-            button2.Location = new Point(334, 330);
+            button2.BackColor = Color.Cyan;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.ForeColor = Color.FromArgb(64, 0, 0);
+            button2.Location = new Point(80, 541);
+            button2.Margin = new Padding(4, 3, 4, 3);
             button2.Name = "button2";
-            button2.Size = new Size(112, 49);
+            button2.Size = new Size(134, 55);
             button2.TabIndex = 12;
             button2.Text = "Homepage";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
-            // button3
+            // label6
             // 
-            button3.Location = new Point(12, 284);
-            button3.Name = "button3";
-            button3.Size = new Size(151, 34);
-            button3.TabIndex = 13;
-            button3.Text = "Generate Report";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.ControlLightLight;
+            label6.Location = new Point(527, 60);
+            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(266, 48);
+            label6.TabIndex = 13;
+            label6.Text = "Student Result";
             // 
             // StudentResult
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button3);
+            BackColor = Color.Teal;
+            ClientSize = new Size(1313, 870);
+            Controls.Add(label6);
             Controls.Add(button2);
             Controls.Add(dataGridView1);
             Controls.Add(comboBox3);
@@ -196,7 +222,10 @@
             Controls.Add(comboBox1);
             Controls.Add(label1);
             Controls.Add(button1);
+            Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "StudentResult";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "StudentResult";
             Load += StudentResult_Load;
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
@@ -221,6 +250,6 @@
         private ComboBox comboBox2;
         private TextBox textBox1;
         private Button button2;
-        private Button button3;
+        private Label label6;
     }
 }

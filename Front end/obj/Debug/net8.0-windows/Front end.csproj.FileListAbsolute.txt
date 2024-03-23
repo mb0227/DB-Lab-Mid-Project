@@ -49,3 +49,37 @@ A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Projec
 A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front_end.AssesmentComponent.resources
 A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front_end.RubricLevel.resources
 A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\Front end\obj\Debug\net8.0-windows\Front_end.StudentResult.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\Front end.exe
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\Front end.deps.json
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\Front end.runtimeconfig.json
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\Front end.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\Front end.pdb
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.csproj.AssemblyReference.cache
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front_end.Assesment.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front_end.AssesmentComponent.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front_end.Attendance.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front_end.CLO.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front_end.Form1.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front_end.Properties.Resources.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front_end.Rubric.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front_end.RubricLevel.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front_end.Student.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front_end.StudentResult.resources
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.csproj.GenerateResource.cache
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.GeneratedMSBuildEditorConfig.editorconfig
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.AssemblyInfoInputs.cache
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.AssemblyInfo.cs
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.csproj.CoreCompileInputs.cache
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.sourcelink.json
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.csproj.Up2Date
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\refint\Front end.dll
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.pdb
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\Front end.genruntimeconfig.cache
+A:\University Related\UET Lahore\2nd Semester\Database Systems\DB Lab Mid Project\Front end\DB-Lab-Mid-Project\Front end\obj\Debug\net8.0-windows\ref\Front end.dll

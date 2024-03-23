@@ -203,6 +203,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

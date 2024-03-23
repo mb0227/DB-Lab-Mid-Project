@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Front end.csproj": {}
+    "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\DB-Lab-Mid-Project\\Front end\\Front end.csproj": {}
   },
   "projects": {
-    "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Front end.csproj": {
+    "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\DB-Lab-Mid-Project\\Front end\\Front end.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Front end.csproj",
+        "projectUniqueName": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\DB-Lab-Mid-Project\\Front end\\Front end.csproj",
         "projectName": "Front end",
-        "projectPath": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Front end.csproj",
+        "projectPath": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\DB-Lab-Mid-Project\\Front end\\Front end.csproj",
         "packagesPath": "C:\\Users\\Bilal\\.nuget\\packages\\",
-        "outputPath": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\obj\\",
+        "outputPath": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\DB-Lab-Mid-Project\\Front end\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bilal\\AppData\\Roaming\\NuGet\\NuGet.Config",

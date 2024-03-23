@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E0efSVUVSkz8j9STSckKQvHxUqLIgWgOKeRtrpTQJpv2sA4iBAADWFGshrcCoq82PLaVKQuPPOfUcFP4JxzdlA==",
+  "dgSpecHash": "68LSfG2AGEdEV05d4M4ycdTB9EkBEOXCGbvzW3vpbiBYDOziSo2ogBXtYFp7AR7m9kTm4VKMOC21KGDYGr14jQ==",
   "success": true,
-  "projectFilePath": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\Front end\\Front end.csproj",
+  "projectFilePath": "A:\\University Related\\UET Lahore\\2nd Semester\\Database Systems\\DB Lab Mid Project\\Front end\\DB-Lab-Mid-Project\\Front end\\Front end.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bilal\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Bilal\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -80,11 +80,11 @@ namespace Front_end
             SqlCommand command = new SqlCommand(cmd, con);
 
             int valueToInsert = 0;
-            if(comboBox2.SelectedItem.ToString()=="Present")
+            if (comboBox2.SelectedItem.ToString() == "Present")
             {
                 valueToInsert = 1;
             }
-            else if(comboBox2.SelectedItem.ToString() == "Absent")
+            else if (comboBox2.SelectedItem.ToString() == "Absent")
             {
                 valueToInsert = 2;
             }
@@ -150,5 +150,9 @@ namespace Front_end
             this.Hide();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

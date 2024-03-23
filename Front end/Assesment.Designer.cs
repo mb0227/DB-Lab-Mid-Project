@@ -42,7 +42,7 @@
             errorProvider2 = new ErrorProvider(components);
             errorProvider3 = new ErrorProvider(components);
             button3 = new Button();
-            button4 = new Button();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider2).BeginInit();
@@ -52,15 +52,16 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(68, 45);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(40, 202);
             label1.Name = "label1";
-            label1.Size = new Size(44, 25);
+            label1.Size = new Size(50, 25);
             label1.TabIndex = 0;
             label1.Text = "Title";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(209, 39);
+            textBox1.Location = new Point(209, 196);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(150, 31);
             textBox1.TabIndex = 1;
@@ -68,27 +69,35 @@
             // 
             // button1
             // 
-            button1.Location = new Point(84, 219);
+            button1.BackColor = Color.SpringGreen;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            button1.ForeColor = Color.FromArgb(64, 0, 0);
+            button1.Location = new Point(40, 365);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(112, 46);
             button1.TabIndex = 2;
             button1.Text = "Save";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(247, 219);
+            button2.BackColor = Color.Cyan;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            button2.ForeColor = Color.FromArgb(64, 0, 0);
+            button2.Location = new Point(40, 550);
             button2.Name = "button2";
-            button2.Size = new Size(119, 34);
+            button2.Size = new Size(139, 55);
             button2.TabIndex = 3;
             button2.Text = "HomePage";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(209, 91);
+            textBox2.Location = new Point(209, 245);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(150, 31);
             textBox2.TabIndex = 4;
@@ -96,7 +105,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(209, 140);
+            textBox3.Location = new Point(209, 302);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(150, 31);
             textBox3.TabIndex = 5;
@@ -105,28 +114,33 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(68, 91);
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(40, 251);
             label2.Name = "label2";
-            label2.Size = new Size(102, 25);
+            label2.Size = new Size(111, 25);
             label2.TabIndex = 6;
             label2.Text = "Total Marks";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(68, 141);
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(40, 302);
             label3.Name = "label3";
-            label3.Size = new Size(139, 25);
+            label3.Size = new Size(152, 25);
             label3.TabIndex = 7;
             label3.Text = "Total Weightage";
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = SystemColors.ControlLightLight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(404, 27);
+            dataGridView1.Location = new Point(424, 168);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(360, 225);
+            dataGridView1.Size = new Size(658, 428);
             dataGridView1.TabIndex = 8;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -144,29 +158,38 @@
             // 
             // button3
             // 
-            button3.Location = new Point(182, 294);
+            button3.BackColor = Color.Orchid;
+            button3.BackgroundImageLayout = ImageLayout.Center;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            button3.ForeColor = Color.FromArgb(64, 0, 0);
+            button3.Location = new Point(186, 365);
             button3.Name = "button3";
-            button3.Size = new Size(197, 34);
+            button3.Size = new Size(197, 46);
             button3.TabIndex = 9;
             button3.Text = "Add Component";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
-            // button4
+            // label4
             // 
-            button4.Location = new Point(430, 303);
-            button4.Name = "button4";
-            button4.Size = new Size(199, 34);
-            button4.TabIndex = 10;
-            button4.Text = "Generate Report";
-            button4.UseVisualStyleBackColor = true;
+            label4.AutoSize = true;
+            label4.FlatStyle = FlatStyle.Popup;
+            label4.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.ControlLightLight;
+            label4.Location = new Point(381, 41);
+            label4.Name = "label4";
+            label4.Size = new Size(408, 54);
+            label4.TabIndex = 10;
+            label4.Text = "Manage Assessment";
             // 
             // Assesment
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button4);
+            BackColor = Color.Teal;
+            ClientSize = new Size(1094, 777);
+            Controls.Add(label4);
             Controls.Add(button3);
             Controls.Add(dataGridView1);
             Controls.Add(label3);
@@ -177,8 +200,11 @@
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label1);
+            ForeColor = SystemColors.ActiveCaptionText;
             Name = "Assesment";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Assesment";
+            TransparencyKey = Color.Cyan;
             Load += Assesment_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
@@ -203,6 +229,6 @@
         private ErrorProvider errorProvider2;
         private ErrorProvider errorProvider3;
         private Button button3;
-        private Button button4;
+        private Label label4;
     }
 }

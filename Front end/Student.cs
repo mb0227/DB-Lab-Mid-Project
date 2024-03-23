@@ -132,11 +132,17 @@ namespace Front_end
 
                 string conURL = "Data Source=BILAL\\MSSQLSERVER01;Initial Catalog=ProjectB;Integrated Security=True";
                 string cmd = "DELETE FROM STUDENT WHERE Id = @Id";
+                string cmd2 = "DELETE FROM STUDENTRESULT WHERE StudentId = @Id";
 
                 using (SqlConnection con = new SqlConnection(conURL))
                 {
                     con.Open();
                     SqlCommand command = new SqlCommand(cmd, con);
+                    SqlCommand command2 = new SqlCommand(cmd2, con);
+
+                    command2.Parameters.AddWithValue("@Id", studentID);
+                    command2.ExecuteNonQuery();
+
                     command.Parameters.AddWithValue("@Id", studentID);
                     command.ExecuteNonQuery();
                     MessageBox.Show("Data Deleted Successfully!");

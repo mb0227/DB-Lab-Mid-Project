@@ -157,7 +157,7 @@ namespace Front_end
         private void ClearText()
         {
             textBox1.Text = "";
-            textBox2.Text = "";           
+            textBox2.Text = "";
         }
 
         public int GetAssessmentID()
@@ -320,6 +320,15 @@ namespace Front_end
             f.Show();
             this.Hide();
         }
- 
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
